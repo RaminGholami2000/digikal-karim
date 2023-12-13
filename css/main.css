@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.product{
+    width: 400px;
+    height: 400px;
+    background-color: deeppink;
+    margin: 50px auto;
+    position: relative;
+     overflow: hidden; 
+}
+div.product>div.image{
+    width: 100%;
+    height: 100%;
+}
+div.product>div.image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+div.product>div.cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(220, 20, 60, 0.493);
+    position: absolute;
+    top: 0;
+    left:-100%;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transform-origin: right top;
+}
+div.product:hover>div.cover{
+   left: 0;
+} 
+div.product:hover>div.image>img{
+    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5,1.5);
+    -moz-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    -o-transform: scale(1.5,1.5);
+    transform-origin: center top;
+}
+div.product>div.cover>h2{
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-top: 20px;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition-delay: 400ms;
+    opacity: 0;
+}
+div.product>div.cover>h3{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-top: 20px;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transition: 300ms;
+    transition-delay: 600ms;
+    opacity: 0;
+
+}
+div.product>div.cover>a{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    background-color: crimson;
+    color: whitesmoke;
+    margin: 20px auto;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition-delay: 800ms;
+    opacity: 0;
+
+}
+div.product:hover>div.cover>h2,div.product:hover>div.cover>h3,div.product:hover>div.cover>a{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+}
